@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+p, ul, a {
+  color: #555;
+}
+
+header {
+  padding: 20px;
+  background-color: #e3e3ff;
+  text-align: center;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #575757;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+button {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #e3e3ff;
+  margin-top: 30px;
+}

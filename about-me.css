@@ -1,0 +1,151 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #db344a;
+    color: white;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header .tagline {
+    font-style: italic;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+nav a {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+/* Card container */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Typography */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #db344a;
+}
+
+p, ul, li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li:hover {
+    background-color: #eef;
+    padding-left: 10px;
+}
+
+/* Buttons */
+.center-button,
+.my-button {
+    display: inline-block;
+    margin: 10px auto;
+    background-color: #db344a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.center-button:hover,
+.my-button:hover {
+    background-color: #b92943;
+    transform: scale(1.05);
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Highlighted intro */
+.highlight {
+    background-color: #ffced9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Secret message */
+#secret {
+    display: none;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+}

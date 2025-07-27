@@ -1,87 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Heerak Shah | Student Portfolio</title>
-    <link rel="stylesheet" href="about-me2.css">
-
+  <meta charset="UTF-8">
+  <title>Heerak Shah | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <header>
     <h1>Heerak Shah</h1>
-    <p>Aspiring Developer & Curious Learner</p>
+    <p class="tagline">Aspiring Developer & Curious Learner</p>
+  </header>
 
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#interests">Interests</a>
+    <a href="#projects">Projects</a>
+    <a href="#goals">Goals</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="card">
     <h2>About Me</h2>
     <p>Hi! I'm Heerak, a rising senior at Wake Early College of Information & Biotechnologies with a passion for exploring tech and solving problems.</p>
-    <img src="Me.jpg" alt="My Picture" width="200">
+    <img src="Me.jpg" alt="My Picture">
+  </section>
 
+  <section id="education" class="card">
     <h2>Education</h2>
     <ul>
-        <li>School: Wake Early College of Information & Biotechnologies</li>
-        <li>Graduation Year: 2026</li>
-        <li>Favorite Subjects: Web Development, Biology, Chemistry</li>
+      <li><strong>School:</strong> Wake Early College of Information & Biotechnologies</li>
+      <li><strong>Graduation Year:</strong> 2026</li>
+      <li><strong>Favorite Subjects:</strong> Web Development, Biology, Chemistry</li>
     </ul>
+  </section>
 
+  <section id="skills" class="card">
     <h2>Skills</h2>
     <ul>
-        <li>Basic HTML/CSS</li>
-        <li>JavaScript Fundamentals</li>
-        <li>Teamwork & Communication</li>
-        <li>Creative Writing</li>
+      <li>Basic HTML/CSS</li>
+      <li>JavaScript Fundamentals</li>
+      <li>Teamwork & Communication</li>
+      <li>Creative Writing</li>
     </ul>
+  </section>
 
+  <section id="interests" class="card">
     <h2>My Interests</h2>
     <ul>
-        <li>Web Development</li>
-        <li>Swimming</li>
-        <li>Listening to Music</li>
-        <li>Photography & Art</li>
-        <li>Gaming & Tech News</li>
+      <li>Web Development</li>
+      <li>Swimming</li>
+      <li>Listening to Music</li>
+      <li>Photography & Art</li>
+      <li>Gaming & Tech News</li>
     </ul>
+  </section>
 
+  <section id="projects" class="card">
     <h2>My Projects</h2>
-    <p>This website is my first step into coding! Other projects include a quiz app, a journal, and a photo gallery.</p>
-    <p>Fun Button:</p>
-    <button onclick="alert('Thanks for checking out my site!')">Say Hello</button>
+    <p>This website is my first step into the world of coding! Other projects include a mini quiz app, a digital journal, and a photo gallery (coming soon!).</p>
+    <button class="center-button" onclick="alert('Thanks for checking out my site!')">Say Hello</button>
+    <button class="center-button" onclick="showMessage()">Reveal Secret</button>
+    <p id="secret" style="display: none;">You're awesome for finding this! 🔐</p>
+  </section>
 
+  <section id="more-about-me" class="card carousel-section">
+    <h2>More About Me</h2>
+    <div class="carousel">
+      <button class="arrow" onclick="prevSlide()">←</button>
+      <div id="carousel-content">Loading fun facts...</div>
+      <button class="arrow" onclick="nextSlide()">→</button>
+    </div>
+  </section>
+
+  <section id="goals" class="card">
     <h2>Goals & Dreams</h2>
-    <p>I’d love to pursue computer science in college and build apps that support education and mental health.</p>
+    <p>I'd love to pursue computer science in college and work on apps that improve education access and mental health tools for students.</p>
+  </section>
 
-    <h2>My Timeline</h2>
-    <ul>
-        <li>2023: Started learning HTML & CSS</li>
-        <li>2024: Built my first webpage</li>
-        <li>2025: Exploring JavaScript & mini projects</li>
-    </ul>
-
-    <h2>Extracurriculars</h2>
-    <ul>
-        <li>Coding Club</li>
-        <li>Volunteered at library</li>
-        <li>JV Swim Team</li>
-    </ul>
-
-    <h2>Quote That Inspires Me</h2>
-    <p>"The best way to predict the future is to invent it." – Alan Kay</p>
-
-    <h2>Fun Zone</h2>
-    <p>Mini quiz: Is HTML a programming language?</p>
-    <button onclick="alert('Correct!')">Yes</button>
-
-    <h2>Send Me a Message</h2>
-    <form>
-        <input type="text" placeholder="Your name"><br><br>
-        <input type="email" placeholder="Your email"><br><br>
-        <textarea placeholder="Your message"></textarea><br><br>
-        <input type="submit" value="Send">
-    </form>
-
+  <section id="contact" class="card">
     <h2>Connect With Me</h2>
-    <p>Visit my profiles:</p>
-    <a href="https://www.linkedin.com/in/heerakrshah" target="_blank">LinkedIn</a><br>
-    <a href="https://github.com/expert228" target="_blank">GitHub</a>
+    <p>Click the buttons below to visit my profiles:</p>
+    <a href="https://www.linkedin.com/in/heerakrshah" class="my-button" target="_blank">LinkedIn</a>
+    <a href="https://github.com/expert228" class="my-button" target="_blank">GitHub</a>
+  </section>
 
-    <p>Thanks for visiting! Made with curiosity and heart.</p>
+  <footer>
+    <p>Thanks for visiting! 🫶 Made with love and curiosity.</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,95 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Heerak Shah | Student Portfolio</title>
-  <link rel="stylesheet" href="./about-me2.css">
+    <meta charset="UTF-8">
+    <title>Heerak Shah | Student Portfolio</title>
+    <link rel="stylesheet" href="./about-me.css">
 </head>
 <body>
-  <header>
-    <h1>Heerak Shah</h1>
-    <p class="tagline">Aspiring Developer & Curious Learner</p>
-  </header>
+    <header>
+        <h1>Heerak Shah</h1>
+        <p class="tagline">Aspiring Developer & Curious Learner</p>
+    </header>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#interests">Interests</a>
-    <a href="#projects">Projects</a>
-    <a href="#goals">Goals</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#goals">Goals</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <section id="about" class="card">
-    <h2>About Me</h2>
-    <p>Hi! I'm Heerak, a rising senior at Wake Early College of Information & Biotechnologies with a passion for exploring tech and solving problems.</p>
-    <img src="Me.jpg" alt="My Picture">
-  </section>
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>Hi! I'm Heerak, a rising senior at Wake Early College of Information & Biotechnologies with a passion for exploring tech and solving problems.</p>
+        <img src="Me.jpg" alt="My Picture">
+    </section>
 
-  <section id="education" class="card">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>School:</strong> Wake Early College of Information & Biotechnologies</li>
-      <li><strong>Graduation Year:</strong> 2026</li>
-      <li><strong>Favorite Subjects:</strong> Web Development, Biology, Chemistry</li>
-    </ul>
-  </section>
+    <section id="education" class="card">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>School:</strong> Wake Early College of Information & Biotechnologies</li>
+            <li><strong>Graduation Year:</strong> 2026</li>
+            <li><strong>Favorite Subjects:</strong> Web Development, Biology, Chemistry</li>
+        </ul>
+    </section>
 
-  <section id="skills" class="card">
-    <h2>Skills</h2>
-    <ul>
-      <li>Basic HTML/CSS</li>
-      <li>JavaScript Fundamentals</li>
-      <li>Teamwork & Communication</li>
-      <li>Creative Writing</li>
-    </ul>
-  </section>
+    <section id="skills" class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>Basic HTML/CSS</li>
+            <li>JavaScript Fundamentals</li>
+            <li>Teamwork & Communication</li>
+            <li>Creative Writing</li>
+        </ul>
+    </section>
 
-  <section id="interests" class="card">
-    <h2>My Interests</h2>
-    <ul>
-      <li>Web Development</li>
-      <li>Swimming</li>
-      <li>Listening to Music</li>
-      <li>Photography & Art</li>
-      <li>Gaming & Tech News</li>
-    </ul>
-  </section>
+    <section id="interests" class="card">
+        <h2>My Interests</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Swimming</li>
+            <li>Listening to Music</li>
+            <li>Photography & Art</li>
+            <li>Gaming & Tech News</li>
+        </ul>
+    </section>
 
-  <section id="projects" class="card">
-    <h2>My Projects</h2>
-    <p>This website is my first step into the world of coding! Other projects include a mini quiz app, a digital journal, and a photo gallery (coming soon!).</p>
-    <button class="center-button" onclick="alert('Thanks for checking out my site!')">Say Hello</button>
-    <button class="center-button" onclick="showMessage()">Reveal Secret</button>
-    <p id="secret" style="display: none;">You're awesome for finding this! 🔐</p>
-  </section>
+    <section id="projects" class="card">
+        <h2>My Projects</h2>
+        <p>This website is my first step into the world of coding! Other projects include a mini quiz app, a digital journal, and a photo gallery (coming soon!).</p>
+        <button class="center-button" onclick="alert('Thanks for checking out my site!')">Say Hello</button>
+        <button class="center-button" onclick="showMessage()">Reveal Secret</button>
+        <p id="secret" style="display: none; color: red;">You're awesome for finding this! 🔐</p>
+    </section>
 
-  <section id="more-about-me" class="card carousel-section">
-    <h2>More About Me</h2>
-    <div class="carousel">
-      <button class="arrow" onclick="prevSlide()">←</button>
-      <div id="carousel-content">Loading fun facts...</div>
-      <button class="arrow" onclick="nextSlide()">→</button>
-    </div>
-  </section>
+    <section id="gallery" class="card">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Gallery image 1">
+            <img src="photo2.jpg" alt="Gallery image 2">
+            <img src="photo3.jpg" alt="Gallery image 3">
+        </div>
+        <p style="text-align: center;">Snapshots from my life and interests!</p>
+    </section>
 
-  <section id="goals" class="card">
-    <h2>Goals & Dreams</h2>
-    <p>I'd love to pursue computer science in college and work on apps that improve education access and mental health tools for students.</p>
-  </section>
+    <section id="goals" class="card">
+        <h2>Goals & Dreams</h2>
+        <p>I'd love to pursue computer science in college and work on apps that improve education access and mental health tools for students.</p>
+    </section>
 
-  <section id="contact" class="card">
-    <h2>Connect With Me</h2>
-    <p>Click the buttons below to visit my profiles:</p>
-    <a href="https://www.linkedin.com/in/heerakrshah" class="my-button" target="_blank">LinkedIn</a>
-    <a href="https://github.com/expert228" class="my-button" target="_blank">GitHub</a>
-  </section>
+    <section id="contact" class="card">
+        <h2>Connect With Me</h2>
+        <p>Click the buttons below to visit my profiles:</p>
+        <a href="https://www.linkedin.com/in/heerakrshah" class="my-button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/expert228" class="my-button" target="_blank">GitHub</a>
+    </section>
 
-  <footer>
-    <p>Thanks for visiting! 🫶 Made with love and curiosity.</p>
-  </footer>
+    <footer>
+        <p>Thanks for visiting! 🫶 Made with love and curiosity.</p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script>
+        function showMessage() {
+            document.getElementById('secret').style.display = 'block';
+        }
+    </script>
 </body>
 </html>

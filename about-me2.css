@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Base and reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,17 +8,17 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7fa;
+    background-color: #fefefe;
     color: #333;
     padding: 20px;
     line-height: 1.6;
 }
 
-/* Header styles */
+/* Header */
 header {
     text-align: center;
     padding: 40px 20px 20px;
-    background-color: #db344a;
+    background-color: #6c63ff;
     color: white;
     border-radius: 10px;
 }
@@ -32,7 +32,7 @@ header .tagline {
     font-style: italic;
 }
 
-/* Navigation bar */
+/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ nav {
 
 nav a {
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #4da6ff;
     color: white;
     text-decoration: none;
     border-radius: 20px;
@@ -51,10 +51,10 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #2980b9;
+    background-color: #398fd1;
 }
 
-/* Card container */
+/* Cards */
 .card {
     background-color: white;
     border-radius: 10px;
@@ -66,14 +66,14 @@ nav a:hover {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* Typography */
 h2 {
     text-align: center;
     margin-bottom: 15px;
-    color: #db344a;
+    color: #6c63ff;
 }
 
 p, ul, li {
@@ -87,7 +87,7 @@ ul {
 }
 
 li:hover {
-    background-color: #eef;
+    background-color: #eef5ff;
     padding-left: 10px;
 }
 
@@ -96,7 +96,7 @@ li:hover {
 .my-button {
     display: inline-block;
     margin: 10px auto;
-    background-color: #db344a;
+    background-color: #6c63ff;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -109,7 +109,7 @@ li:hover {
 
 .center-button:hover,
 .my-button:hover {
-    background-color: #b92943;
+    background-color: #5a50e0;
     transform: scale(1.05);
 }
 
@@ -147,7 +147,7 @@ img:hover {
 
 /* Highlighted intro */
 .highlight {
-    background-color: #ffced9;
+    background-color: #e7e4ff;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -157,7 +157,7 @@ img:hover {
 /* Secret message */
 #secret {
     display: none;
-    color: red;
+    color: #e74c3c;
     text-align: center;
     font-weight: bold;
 }

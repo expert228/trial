@@ -8,8 +8,8 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #fefefe;
-    color: #333;
+    background: linear-gradient(to bottom right, #2e2e4f, #4d6387);
+    color: #f0f0f0;
     padding: 20px;
     line-height: 1.6;
 }
@@ -18,7 +18,7 @@ body {
 header {
     text-align: center;
     padding: 40px 20px 20px;
-    background-color: #6c63ff;
+    background: linear-gradient(to right, #5c5aff, #7f8df5);
     color: white;
     border-radius: 10px;
 }
@@ -43,7 +43,7 @@ nav {
 
 nav a {
     padding: 10px 20px;
-    background-color: #4da6ff;
+    background: linear-gradient(to right, #3c89e9, #5ab1f6);
     color: white;
     text-decoration: none;
     border-radius: 20px;
@@ -51,29 +51,30 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #398fd1;
+    background: #276fc2;
 }
 
 /* Cards */
 .card {
-    background-color: white;
+    background: linear-gradient(to bottom right, #444b6f, #556688);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
     padding: 30px;
     margin: 20px auto;
     max-width: 800px;
+    color: #f0f0f0;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 /* Typography */
 h2 {
     text-align: center;
     margin-bottom: 15px;
-    color: #6c63ff;
+    color: #c1c3ff;
 }
 
 p, ul, li {
@@ -87,7 +88,7 @@ ul {
 }
 
 li:hover {
-    background-color: #eef5ff;
+    background-color: #3d4f6e;
     padding-left: 10px;
 }
 
@@ -96,7 +97,7 @@ li:hover {
 .my-button {
     display: inline-block;
     margin: 10px auto;
-    background-color: #6c63ff;
+    background: linear-gradient(to right, #5c5aff, #7f8df5);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -109,7 +110,7 @@ li:hover {
 
 .center-button:hover,
 .my-button:hover {
-    background-color: #5a50e0;
+    background: #4643d0;
     transform: scale(1.05);
 }
 
@@ -137,7 +138,7 @@ img:hover {
 .gallery img {
     max-width: 200px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
 }
 
@@ -147,7 +148,7 @@ img:hover {
 
 /* Highlighted intro */
 .highlight {
-    background-color: #e7e4ff;
+    background-color: #3f4b6b;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -167,5 +168,5 @@ footer {
     text-align: center;
     margin-top: 40px;
     font-size: 14px;
-    color: #777;
+    color: #999;
 }

@@ -1,15 +1,8 @@
-/* Base and reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
+/* Body */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom right, #2e2e4f, #4d6387);
-    color: #f0f0f0;
+    background: linear-gradient(to bottom right, #1e1f3e, #2a2c57);
+    color: #f4f4f4;
     padding: 20px;
     line-height: 1.6;
 }
@@ -17,19 +10,12 @@ body {
 /* Header */
 header {
     text-align: center;
-    padding: 40px 20px 20px;
-    background: linear-gradient(to right, #5c5aff, #7f8df5);
+    padding: 60px 20px 30px;
+    background: radial-gradient(circle at top left, #6a75ff, #423c94);
     color: white;
-    border-radius: 10px;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header .tagline {
-    font-style: italic;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
 /* Navigation */
@@ -37,136 +23,132 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    margin: 20px 0;
+    gap: 12px;
+    margin: 30px 0;
+    background: #2a2d54;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 nav a {
-    padding: 10px 20px;
-    background: linear-gradient(to right, #3c89e9, #5ab1f6);
+    padding: 10px 18px;
+    background: linear-gradient(to right, #4f93ff, #6bafff);
     color: white;
     text-decoration: none;
     border-radius: 20px;
     font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 nav a:hover {
-    background: #276fc2;
+    background: #3d76c2;
+    transform: translateY(-2px);
 }
 
 /* Cards */
 .card {
-    background: linear-gradient(to bottom right, #444b6f, #556688);
-    border-radius: 10px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-    padding: 30px;
-    margin: 20px auto;
+    background: linear-gradient(to bottom right, #323657, #4a537e);
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+    padding: 25px;
+    margin: 30px auto;
     max-width: 800px;
-    color: #f0f0f0;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-}
-
-/* Typography */
+/* Section Titles */
 h2 {
     text-align: center;
-    margin-bottom: 15px;
-    color: #c1c3ff;
+    margin-bottom: 20px;
+    color: #9fc1ff;
+    font-size: 1.8em;
 }
 
+/* Lists & Text */
 p, ul, li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-align: left;
+    font-size: 17px;
+    margin-bottom: 12px;
 }
 
 ul {
-    padding-left: 20px;
+    padding-left: 25px;
+}
+
+li {
+    padding: 6px 0;
 }
 
 li:hover {
-    background-color: #3d4f6e;
-    padding-left: 10px;
+    background-color: #3e4664;
+    padding-left: 12px;
+    border-left: 4px solid #6fa3ff;
 }
 
 /* Buttons */
 .center-button,
 .my-button {
     display: inline-block;
-    margin: 10px auto;
-    background: linear-gradient(to right, #5c5aff, #7f8df5);
+    margin: 12px auto;
+    background: linear-gradient(to right, #6c6aff, #908ef7);
     color: white;
-    padding: 10px 20px;
+    padding: 10px 22px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .center-button:hover,
 .my-button:hover {
-    background: #4643d0;
+    background: #5755d6;
     transform: scale(1.05);
 }
 
-/* Images */
+/* Image Styling */
 img {
     display: block;
     margin: 0 auto 15px;
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
 }
 
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
-/* Gallery Styles */
+/* Gallery */
 .gallery {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .gallery img {
-    max-width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
+    max-width: 180px;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* Highlighted intro */
-.highlight {
-    background-color: #3f4b6b;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Secret message */
+/* Secret Message */
 #secret {
     display: none;
-    color: #e74c3c;
+    color: #ff8686;
     text-align: center;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
+    padding: 15px;
     font-size: 14px;
-    color: #999;
+    color: #aaa;
+    background: #2e3056;
+    border-radius: 10px;
 }
